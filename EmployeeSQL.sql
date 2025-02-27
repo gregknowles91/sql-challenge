@@ -50,22 +50,22 @@ CREATE TABLE salaries (
 
 -- Import data from CSV files
 COPY departments(dept_no, dept_name)
-FROM '/path/to/departments.csv' DELIMITER ',' CSV HEADER;
+FROM '/Users/gregknowles/Downloads/Starter_Code 13/data/departments.csv' DELIMITER ',' CSV HEADER;
 
 COPY titles(title_id, title)
-FROM '/path/to/titles.csv' DELIMITER ',' CSV HEADER;
+FROM 'Users/gregknowles/Downloads/Starter_Code 13/data/titles.csv' DELIMITER ',' CSV HEADER;
 
 COPY employees(emp_no, emp_title_id, birth_date, first_name, last_name, sex, hire_date)
-FROM '/path/to/employees.csv' DELIMITER ',' CSV HEADER;
+FROM 'Users/gregknowles/Downloads/Starter_Code 13/data/employees.csv' DELIMITER ',' CSV HEADER;
 
 COPY dept_manager(dept_no, emp_no)
-FROM '/path/to/dept_manager.csv' DELIMITER ',' CSV HEADER;
+FROM 'Users/gregknowles/Downloads/Starter_Code 13/data/dept_manager.csv' DELIMITER ',' CSV HEADER;
 
 COPY dept_emp(emp_no, dept_no)
-FROM '/path/to/dept_emp.csv' DELIMITER ',' CSV HEADER;
+FROM 'Users/gregknowles/Downloads/Starter_Code 13/datadept_emp.csv' DELIMITER ',' CSV HEADER;
 
 COPY salaries(emp_no, salary)
-FROM '/path/to/salaries.csv' DELIMITER ',' CSV HEADER;
+FROM 'Users/gregknowles/Downloads/Starter_Code 13/data/salaries.csv' DELIMITER ',' CSV HEADER;
 
 -- Data Analysis Queries
 -- List employee number, last name, first name, sex, and salary
